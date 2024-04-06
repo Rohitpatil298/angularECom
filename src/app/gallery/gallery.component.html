@@ -1,0 +1,64 @@
+<div class="mat-dialog-content p-4 w-80">
+  <h1 style="display: flex; align-items: center">Add User</h1>
+  <form [formGroup]="register" (ngSubmit)="onSubmit()">
+    <div>
+      <select
+        class="form-select"
+        aria-label="Default select example"
+        formControlName="department"
+        aria-placeholder="Select Department"
+      >
+        <option selected>Select Department</option>
+        <option value="Computer">Computer</option>
+        <option value="Mechanical">Mechanical</option>
+        <option value="Electrical">Electrical</option>
+        <option value="Architecture">Architecture</option>
+      </select>
+    </div>
+    <div class="mb-3 mt-4">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter Name"
+        formControlName="name"
+      />
+    </div>
+    <div class="mb-3 mt-4">
+      <input
+        type="email"
+        class="form-control"
+        placeholder="Enter Email"
+        formControlName="email"
+      />
+    </div>
+    <div class="mb-3 mt-4">
+      <input
+        type="number"
+        class="form-control"
+        placeholder="Enter Phone no"
+        formControlName="phone"
+      />
+    </div>
+    <div class="mb-3 mt-4">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Enter User Code"
+        formControlName="usercode"
+      />
+    </div>
+    <div class="form-check">
+      <input
+        class="form-check-input mb-3"
+        type="checkbox"
+        value=""
+        id="flexCheckDefault"
+        formControlName="status"
+      />
+      <label class="form-check-label" for="flexCheckDefault"> Active </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary me-2">Add</button>
+    <button type="button" class="btn btn-secondary">Cancel</button>
+  </form>
+</div>

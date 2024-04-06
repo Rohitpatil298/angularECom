@@ -1,0 +1,75 @@
+<div class="form">
+  <div>
+    <form
+      *ngIf="!showLogin"
+      class="form-control"
+      #signup="ngForm"
+      (ngSubmit)="sign(signup.value)"
+    >
+      <p class="title">Register</p>
+      <div class="input-field">
+        <input required="" class="input" type="text" name="Username" ngModel />
+        <label class="label" for="input">Enter UserName</label>
+      </div>
+      <div class="input-field">
+        <input required="" class="input" type="text" name="email" ngModel />
+        <label class="label" for="input">Enter Email</label>
+      </div>
+      <div class="input-field">
+        <input
+          required=""
+          class="input"
+          type="password"
+          name="password"
+          ngModel
+        />
+        <label class="label" for="input">Enter Password</label>
+      </div>
+      <a>Forgot your password?</a>
+      <button class="submit-btn">Register</button>
+      <p (click)="gotologin()" class="formlink">
+        Already have an account, please log in
+      </p>
+    </form>
+  </div>
+  <br /><br />
+  
+  
+  <div>
+    <form
+      *ngIf="showLogin"
+      class="form-control"
+      #signup="ngForm"
+      (ngSubmit)="login(signup.value)"
+    >
+      <p class="title">Login</p>
+      <div class="input-field">
+        <input
+          required=""
+          class="input"
+          type="text"
+          name="email"
+          ngModel
+          #email="ngModel"
+          required
+        />
+        <label class="label" for="input">Enter Email</label>
+      </div>
+      <div class="input-field">
+        <input
+          required=""
+          class="input"
+          type="password"
+          name="password"
+          ngModel
+        />
+        <label class="label" for="input">Enter Password</label>
+      </div>
+      <button class="submit-btn">Sign In</button>
+      <p (click)="gotoregister()" class="formlink">
+        Don't have an account, please Register
+      </p>
+    </form>
+  </div>
+  
+</div>

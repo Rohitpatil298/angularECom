@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "name": "Rohit patil",
+      "email": "rohit@gmail.com",
+      "password": "rohit123",
+      "id": "1"
+    },
+    {
+      "name": "fenil modi",
+      "email": "fenil@gmail.com",
+      "password": "fenilt123",
+      "id": "2"
+    },
+    {
+      "name": "deep lotwalla",
+      "email": "deep@gmail.com",
+      "password": "deep123",
+      "id": "3"
+    },
+    {
+      "id": "bc48",
+      "Username": "rohit shinde",
+      "email": "rohit@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": "5545",
+      "Username": "viddhi ladva",
+      "email": "viddhi@gmail.com",
+      "password": "viddhi@123"
+    },
+    {
+      "id": "0c50",
+      "Username": "partik shinde",
+      "email": "pratik@gmail.com",
+      "password": "pratik123"
+    },
+    {
+      "id": "f28b",
+      "Username": "",
+      "email": "",
+      "password": ""
+    }
+  ]
+}

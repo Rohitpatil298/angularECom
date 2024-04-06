@@ -1,0 +1,31 @@
+<h1 class="title">Products page</h1>
+
+<div *ngIf="data; else loading">
+  <div class="mycard">
+    <div class="card" *ngFor="let item of data.products">
+      <div class="header">
+        <div class="image">
+          <img
+            [routerLink]="'/productdetail/' + item.id"
+            [src]="item.thumbnail"
+          />
+        </div>
+        <div class="content">
+          <h2 class="prodtitle">{{ item.title }}</h2>
+          <p class="message">{{ item.description }}</p>
+
+          <h4 class="price">price : {{ item.price }}</h4>
+        </div>
+        <div class="actions">
+          <button class="desactivate" (click)="mycart(item)" type="button">
+            Add To Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #loading>
+  <h1 style="display: flex; justify-content: center">Loading...</h1>
+</ng-template>

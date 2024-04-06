@@ -1,0 +1,37 @@
+<div><button class="back" (click)="back()">Back</button></div>
+<div class="container">
+  <div class="con1">
+    <div class="image">
+      <img src="{{ productData?.thumbnail }}" alt="" srcset="" />
+    </div>
+    <div class="btn1">
+      <button class="buy">Buy Now</button>
+
+      <button class="desactivate" (click)="mycart(item)" type="button">
+        Add To Cart
+      </button>
+    </div>
+  </div>
+  <div class="con2">
+    <div class="title">
+      <p>{{ productData?.title }}</p>
+    </div>
+    <p>Special price</p>
+    <h1>Price : {{ productData?.price }}</h1>
+    <p class="Category" style="font-size: large">
+      <span style="font-weight: bold">Category:</span>
+      {{ productData?.category }}
+    </p>
+    <p class="desc" style="font-size: large">Description:</p>
+    <p style="font-size: large">
+      {{ productData?.description }}
+    </p>
+
+    <p style="font-size: large">
+      Dsicount : {{ productData?.discountPercentage }}%
+    </p>
+    <p class="stocks" style="font-size: large">
+      stocks : {{ productData?.stock }} units left
+    </p>
+  </div>
+</div>
